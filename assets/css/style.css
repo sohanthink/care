@@ -88,6 +88,89 @@ img {
     font-size: 1rem;
 }
 
-body{
-    font-family: 'PP Pangram Sans, Light';
+
+
+
+/* ==================================
+========================== common css
+================================== */
+
+:root {
+    --primary-font: 'PP Writer, Book';
+    --secondary-font: 'PP Pangram Sans, Light';
+    --primary-color: #F5F5EB;
 }
+
+.centered-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* ==================================
+=========================== about css
+================================== */
+
+.about{
+    background-color: #F5F5EB;
+    padding: 165px 0;
+}
+.about h5{
+    font-family: var(--secondary-font);
+    font-size: 25px;
+    letter-spacing: 3.5px;
+    position: relative;
+    padding-bottom: 100px;
+}
+.about h5::after{
+    content: '';
+    position: absolute;
+    top: 90px;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: black;
+}
+.about p{
+    color: #1A1B1A;
+    font-family: var(--primary-font);
+    font-size: 60px;
+}
+
+.about .about_img{
+    display: flex;
+    gap: 300px;
+    margin-top: 100px;
+}
+.about .about_img img{
+    width: 100%;
+}
+.about .about_img span{
+    padding-top: 35px;
+    font-family: var(--primary-font);
+    text-align: right;
+    display: block;
+}
+
+
+
+
+
+
+
+
+/* ==================================
+======== reset css
+================================== */
+
+
+
+/* ==================================
+======== reset css
+================================== */
+
+
+/* ==================================
+======== reset css
+================================== */
