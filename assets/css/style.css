@@ -1,0 +1,209 @@
+@font-face {
+    font-family: 'PP Writer, Book';
+    src: url('../font/PPWriter-Book-BF6445d4ec72b68.otf') format('truetype');
+  }
+@font-face {
+    font-family: 'PP Pangram Sans, Light';
+    src: url('../font/Pangram-Light.otf') format('truetype');
+  }
+
+/* ==================================
+======== reset css
+================================== */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+::-moz-selection {
+    color: #ffffff;
+    background: #6FC05B;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 16px;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+
+a,
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+    color: unset;
+}
+
+button,
+button:hover,
+button:focus,
+button:active {
+    outline: none;
+}
+
+input:-webkit-autofill {
+    -webkit-text-fill-color: unset;
+    -webkit-transition: background-color 5000s;
+    transition: background-color 5000s;
+}
+
+ul,
+ol {
+    list-style: none;
+    padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.object-fit--contain {
+    -o-object-fit: contain;
+    object-fit: contain;
+}
+
+.user-select-none {
+    pointer-events: none;
+}
+
+.list-inline {
+    font-size: 0;
+}
+
+.list-inline-item {
+    font-size: 1rem;
+}
+
+
+
+
+/* ==================================
+========================== common css
+================================== */
+
+:root {
+    --primary-font: 'PP Writer, Book';
+    --secondary-font: 'PP Pangram Sans, Light';
+    --primary-color: #F5F5EB;
+}
+
+.centered-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* ==================================
+=========================== about css
+================================== */
+
+
+.about{
+    background-color: #F5F5EB;
+    padding: 165px 0;
+}
+.about h5{
+    font-family: var(--secondary-font);
+    font-size: 25px;
+    letter-spacing: 3.5px;
+    position: relative;
+    padding-bottom: 100px;
+}
+.about h5::after{
+    content: '';
+    position: absolute;
+    top: 90px;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: black;
+}
+.about p{
+    color: #1A1B1A;
+    font-family: var(--primary-font);
+    font-size: 60px;
+}
+
+.about .about_img{
+    display: flex;
+    gap: 300px;
+    margin-top: 100px;
+}
+.about .about_img img{
+    width: 100%;
+}
+.about .about_img span{
+    padding-top: 35px;
+    font-family: var(--primary-font);
+    text-align: right;
+    display: block;
+}
+
+
+
+/* ==================================
+========================= service css
+================================== */
+
+
+.service{
+    background-color: #F5F5EB;
+}
+.service h5{
+    font-family: var(--secondary-font);
+    font-size: 25px;
+    letter-spacing: 3.5px;
+    position: relative;
+    padding-bottom: 100px;
+}
+.service h5::after{
+    content: '';
+    position: absolute;
+    top: 90px;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: black;
+}
+.service .service_card{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    align-items: center;
+    margin: 100px 0;
+    padding: 50px;
+}
+.service .service_card .title h3{
+    font-size: 40px;
+    font-family: var(--primary-font);
+}
+.service .service_card .description p{
+    text-align: center;
+    font-size: 20px;
+    font-family: var(--secondary-font);
+    letter-spacing: 1.2px;
+}
+
+/* ==================================
+======== reset css
+================================== */
+
+
+/* ==================================
+======== reset css
+================================== */
