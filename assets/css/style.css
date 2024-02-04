@@ -211,6 +211,7 @@ img {
 
 .project{
     background-color: #F5F5EB;
+    padding: 100px;
 }
 .project h5{
     font-family: var(--secondary-font);
@@ -228,6 +229,52 @@ img {
     width: 100%;
     background-color: black;
 }
+.project .project_content_section{
+    padding: 20px 0;
+}
+.project .project_content_section p a{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.project .project_content_section p a::after{
+    content: '';
+    position: absolute;
+    top: 45px;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background-color: black;
+}
+.project .project_content_section .collapse p{
+    font-family: var(--secondary-font);
+    color: #1A1B1A;
+}
+.card-body {
+    padding:0;
+    color: var(--bs-card-color);
+    background: none;
+    margin-top: 50px;
+    border: none;
+}
+
+.project .project_content_section .card_images{
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    padding-top: 50px
+}
+.project .project_content_section .caption{
+    padding: 40px 0;
+}
+.project .project_content_section h6{
+    font-size: 13px;
+    font-family: var(--secondary-font);
+}
+
+
 
 /* ==================================
 ======== reset css
