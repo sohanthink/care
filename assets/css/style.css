@@ -109,6 +109,40 @@ img {
 
 
 /* ==================================
+=========================== banner css
+================================== */
+
+.banner{
+    background-image: url(../images/banner/banner.png);
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+}
+.banner .main{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+.banner .main .logo{
+    width: 30%;
+}
+.banner .main h2{
+    color: white;
+    padding-top: 50px;
+    text-align: center;
+    font-family: var(--primary-font);
+    font-size: 70px;
+}
+
+
+/* ==================================
 =========================== about css
 ================================== */
 
