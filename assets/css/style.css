@@ -8,7 +8,7 @@
   }
 
 /* ==================================
-======== reset css
+=========================== reset css
 ================================== */
 *,
 *::before,
@@ -314,7 +314,7 @@ img {
 
 
 /* ==================================
-======== reset css
+========================== footer css
 ================================== */
 
 
@@ -366,9 +366,96 @@ img {
 
 
 /* ==================================
-======== reset css
+======================= responsive css
 ================================== */
 
-/* ==================================
-======== reset css
-================================== */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 320px) and (max-width: 575.98px) {
+
+
+    .banner .main {
+        padding: 0px;
+    }
+    .banner .main h2 {
+        font-size: 17px;
+    }
+
+
+
+
+    .project .project_content_section p a span {
+        font-size: 17px;
+    }
+    .footer .main .middle p {
+        font-size: 17px;
+    }
+    .footer .main .info ul li {
+        font-size: 17px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+    .banner .main h2 {
+        font-size: 25px;
+    }
+    .banner .main{
+        padding: 0;
+    }
+    .about p {
+        font-size: 25px;
+    }
+    .about .about_img {
+        display: flex;
+        gap: 30px;
+        margin-top: 20px;
+        flex-direction: column;
+    }
+    .service p {
+        font-size: 25px;
+    }
+    .service .service_card {
+        margin: 20px 0 0 0;
+        padding: 30px;
+    }
+
+    .service .service_card .title h3 {
+        font-size: 28px;
+
+
+    .project .project_content_section p a span {
+        font-size: 17px;
+    }
+    .footer .main .middle p {
+        font-size: 17px;
+    }
+    .footer .main .info ul li {
+        font-size: 17px;
+    }
+}
+  
+  /* Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) {
+    .footer .main .info ul li {
+        font-size: 25px;
+    }
+    .footer .main .middle p {
+        font-size: 25px;
+    }
+  }
+  
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) {
+    /* Your styles for large devices go here */
+  }
+  
+  /* X-Large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {
+    /* Your styles for extra-large devices go here */
+  }
+  
+  /* XX-Large devices (larger desktops, 1400px and up) */
+  @media (min-width: 1400px) {
+    /* Your styles for extra-extra-large devices go here */
+  }
