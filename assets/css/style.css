@@ -136,7 +136,7 @@ img {
 .about p{
     color: #1A1B1A;
     font-family: var(--primary-font);
-    font-size: 40px;
+    font-size: 35px;
 }
 
 .about .about_img{
