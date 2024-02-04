@@ -314,6 +314,54 @@ img {
 ======== reset css
 ================================== */
 
+
+.footer {
+    background-color: #C8D2A9;
+    padding: 90px 0;
+}
+.footer .main{
+    display: flex;
+    gap: 50px;
+    position: relative;
+}
+.footer .main::after{
+    content: '';
+    position: absolute;
+    bottom: -45px;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: black;
+}
+
+.footer .main .logo{
+    width: 15%;
+}
+.footer .main .logo img{
+    width: 50%;
+}
+.footer .main .middle{
+    width: 45%;
+}
+.footer .main .middle p{
+    font-size: 40px;
+    font-family: var(--primary-font);
+}
+.footer .main .info{
+    width: 40%;
+}
+.footer .main .info ul li{
+    font-size: 40px;
+    font-family: var(--primary-font);
+}
+.footer #copyright{
+    text-align: center;
+    padding-top: 100px;
+    font-family: var(--secondary-font);
+    font-size: 18px;
+}
+
+
 /* ==================================
 ======== reset css
 ================================== */
