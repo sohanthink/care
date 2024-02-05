@@ -343,11 +343,13 @@ img {
   background-color: #c8d2a9;
   padding: 90px 0;
 }
+
 .footer .main {
   display: flex;
   gap: 50px;
   position: relative;
 }
+
 .footer .main::after {
   content: "";
   position: absolute;
@@ -365,18 +367,10 @@ img {
   width: 50%;
 }
 
-/* .footer .main .middle{
-    width: 50%;
-} */
-
 .footer .main .middle p {
   font-size: 27px;
   font-family: var(--primary-font);
 }
-
-/* .footer .main .info{
-    width: 35%;
-} */
 
 .footer .main .info ul li {
   font-size: 25px;
@@ -398,6 +392,7 @@ img {
   .banner .main {
     padding: 0px;
   }
+
   .banner .main h2 {
     font-size: 17px;
   }
@@ -413,19 +408,22 @@ img {
   }
   .about {
     padding: 70px 20px;
-}
+  }
   .service {
     padding: 50px 20px;
-}
-.service .service_card {
-  margin: 40px 0 0 0;
-}
+  }
+  .service .service_card {
+    margin: 40px 0 0 0;
+  }
+
   .service p {
     font-size: 22px;
   }
+
   .service .service_card .title h3 {
     font-size: 20px;
   }
+
   .service .service_card .description p {
     font-size: 17px;
   }
@@ -436,36 +434,46 @@ img {
   .project .project_content_section p a span {
     font-size: 17px;
   }
+
   .project .project_content_section p a::after {
     top: 55px;
   }
+
   .project .project_content_section h6 {
     font-size: 12px;
-}
-.founder{
-  padding: 40px;
-}
-.founder .founder_content p {
-  padding-top: 30px;
-}
-.footer{
-  padding: 40px;
-}
+  }
+
+  .founder {
+    padding: 40px;
+  }
+
+  .founder .founder_content p {
+    padding-top: 30px;
+  }
+
+  .footer {
+    padding: 40px;
+  }
+
   .footer .main .middle p {
     font-size: 17px;
   }
+
   .footer .main .info ul li {
     font-size: 17px;
   }
+
   .footer .main .logo {
     width: 40%;
-}
-.footer .main .logo img{
-  width: 100%;
-}
-.footer .main {
-  gap: 25px;
-}
+  }
+
+  .footer .main .logo img {
+    width: 100%;
+  }
+
+  .footer .main {
+    gap: 25px;
+  }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -474,6 +482,27 @@ img {
   }
   .banner .main {
     padding: 0;
+  }
+  .about {
+    padding: 92px 0;
+  }
+  .project {
+    padding: 40px;
+  }
+  .project .project_content_section p a::after {
+    top: 50px;
+  }
+  .project .project_content_section h6 {
+    font-size: 12px;
+  }
+  .founder {
+    padding: 40px;
+  }
+  .founder .founder_content p {
+    margin-top: 30px;
+  }
+  .footer .main .logo img {
+    width: 100%;
   }
   .about p {
     font-size: 25px;
@@ -509,23 +538,81 @@ img {
 }
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .banner .main h2 {
+    font-size: 21px;
+  }
+
+  .about {
+    padding: 95px 0;
+  }
+  .about .about_img {
+    gap: 120px;
+  }
+  .about p {
+    font-size: 30px;
+  }
+  .service .service_card {
+    margin: 30px 0 0 0;
+  }
+  .project {
+    padding: 75px;
+  }
+  .project .project_content_section p a span {
+    font-size: 29px;
+  }
+  .project .project_content_section p a::after {
+    top: 75px;
+  }
+
+  .service p {
+    font-size: 30px;
+  }
+  .founder {
+    padding: 75px;
+  }
+  .founder .about_img img {
+    width: 100%;
+  }
+  .founder .founder_content p {
+    margin-top: 30px;
+  }
   .footer .main .info ul li {
     font-size: 25px;
   }
   .footer .main .middle p {
     font-size: 25px;
   }
+  .footer .main .logo img {
+    width: 100%;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-  /* Your styles for large devices go here */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .banner .main h2 {
+    font-size: 30px;
+  }
+  .service .service_card {
+    padding: 8px;
+  }
+  .service .service_card .description p {
+    font-size: 16px;
+  }
+  .service .service_card .title h3 {
+    font-size: 30px;
+  }
+  .founder .founder_content p {
+    margin-top: 0px;
+  }
+  .founder .founder_content p {
+    margin-top: 0px;
+    font-size: 18px;
+  }
 }
 
 /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-  /* Your styles for extra-large devices go here */
 }
 
 /* XX-Large devices (larger desktops, 1400px and up) */
