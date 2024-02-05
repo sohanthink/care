@@ -312,6 +312,34 @@ img {
 }
 
 
+/* ==================================
+========================== founder css
+================================== */
+
+.founder{
+    background-color: #F5F5EB;
+    padding: 100px;
+}
+.founder h5{
+    font-family: var(--secondary-font);
+    font-size: 25px;
+    letter-spacing: 3.5px;
+    position: relative;
+    padding-bottom: 100px;
+}
+.founder h5::after{
+    content: '';
+    position: absolute;
+    top: 90px;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: black;
+}
+.founder .founder_content p {
+    font-family: var(--secondary-font);
+    font-size: 21px;
+}
 
 /* ==================================
 ========================== footer css
@@ -476,4 +504,4 @@ img {
   /* XX-Large devices (larger desktops, 1400px and up) */
   @media (min-width: 1400px) {
     /* Your styles for extra-extra-large devices go here */
-  }
+  }}
