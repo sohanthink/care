@@ -13,15 +13,23 @@
     
 
 
+    
+
+
     <!-- Banner part starts from here +++++++++++++++++++++++++++++++++++++++++++ -->
 
     <div class="banner">
+        <nav class="top-menu">
+            <ul>
+                
+            </ul>
+        </nav>
         <div class="overlay">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="main">
-                            <div class="logo"><img src="assets/images/logo-grey.png" alt="" srcset=""></div>
+                            <div class="logo"><img src="assets/images/grey small.png"></div>
                             <div class="content">
                                 <h2>Strategic advisory for cultural development and design</h2>
                             </div>
@@ -430,6 +438,28 @@
     <script>
         const currentYear = new Date().getFullYear();
         document.getElementById("copyright").innerHTML = `All rights reserved &copy; ${currentYear} <a target="blank" href="https://sohanthink.com/"><u>sohanthink.com</u></a> `;
+
+        
+        window.addEventListener("scroll", function() {
+        // Get the amount scrolled from the top of the document
+        var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        let element = document.querySelector(".logo")
+        let topmenu = document.querySelector(".top-menu")
+        if(scrollTop>0){
+            element.style.top = "0"
+            element.style.position = "fixed"
+            element.style.width = "5%"
+            element.style.transition = "all linear 0.4s"
+            topmenu.style.background = "#ffffff63"
+        }else{
+            element.style.top = "140px"
+            element.style.position = "absolute"
+            element.style.width = "15%"
+            element.style.transition = "all linear 0.4s"
+            topmenu.style.background = "#ffffff00"
+        }
+        });
+
     </script>
 
 
