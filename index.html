@@ -442,32 +442,71 @@
         document.getElementById("copyright").innerHTML = `All rights reserved &copy; ${currentYear} <a target="blank" href="https://sohanthink.com/"><u>sohanthink.com</u></a> `;
 
         
-        window.addEventListener("scroll", function() {
-        // Get the amount scrolled from the top of the document
-        var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-        let element = document.querySelector(".logo")
-        let topmenu = document.querySelector(".top-menu")
-        console.log(scrollTop);
-        if(scrollTop>0){
-            element.style.top = "13px"
-            element.style.position = "fixed"
-            element.style.width = "3%"
-            element.style.transition = "all linear 0.4s"
-            topmenu.style.background = "rgb(200 210 169)"
-        }else{
-            element.style.top = "140px"
-            element.style.position = "absolute"
-            element.style.width = "11%"
-            element.style.transition = "all linear 0.4s"
-            topmenu.style.background = "#ffffff00"
-        }
-
-        // if (scrollTop>1000) {
-        //     element.style.background ="#c8d2a9"
+        // window.addEventListener("scroll", function() {
+        // // Get the amount scrolled from the top of the document
+        // var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        // let element = document.querySelector(".logo")
+        // let topmenu = document.querySelector(".top-menu")
+        // console.log(scrollTop);
+        // if(scrollTop>0){
+        //     element.style.top = "13px"
+        //     element.style.position = "fixed"
+        //     element.style.width = "3%"
+        //     element.style.transition = "all linear 0.4s"
+        //     topmenu.style.background = "rgb(200 210 169)"
         // }else{
-        //     element.style.background ="none"
+        //     element.style.top = "140px"
+        //     element.style.position = "absolute"
+        //     element.style.width = "11%"
+        //     element.style.transition = "all linear 0.4s"
+        //     topmenu.style.background = "#ffffff00"
         // }
-        });
+        // });
+
+
+
+
+
+        window.addEventListener("scroll", function() {
+    // Get the amount scrolled from the top of the document
+    var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    let element = document.querySelector(".logo");
+    let topmenu = document.querySelector(".top-menu");
+    let screenWidth = window.innerWidth; // Get the viewport width
+
+    if (screenWidth >= 768) { // Apply the scroll behavior only on screens larger than or equal to 768px
+        if (scrollTop > 0) {
+            element.style.top = "13px";
+            element.style.position = "fixed";
+            element.style.width = "3%";
+            element.style.transition = "all linear 0.4s";
+            topmenu.style.background = "rgb(200 210 169)";
+        } else {
+            element.style.top = "140px";
+            element.style.position = "absolute";
+            element.style.width = "11%";
+            element.style.transition = "all linear 0.4s";
+            topmenu.style.background = "#ffffff00";
+        }
+    } else {
+        // Handle behavior for screens smaller than 768px (e.g., mobile devices)
+        // You can adjust styles or behavior as needed for smaller screens
+        if (scrollTop > 0) {
+            element.style.top = "13px";
+            element.style.position = "fixed";
+            element.style.width = "20%";
+            element.style.transition = "all linear 0.4s";
+            topmenu.style.background = "rgb(200 210 169)";
+        } else {
+            element.style.top = "140px";
+            element.style.position = "absolute";
+            element.style.width = "50%";
+            element.style.transition = "all linear 0.4s";
+            topmenu.style.background = "#ffffff00";
+        }
+    }
+});
+
 
     </script>
 
