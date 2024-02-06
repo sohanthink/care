@@ -27,6 +27,7 @@
 html,
 body {
   scroll-behavior: smooth;
+  background-color: var(--primary-color);
 }
 
 html {
@@ -103,6 +104,10 @@ img {
   align-items: center;
 }
 
+/* ==================================
+== top menu and fade in animation css
+================================== */
+
 .top-menu {
   position: fixed;
   top: 0;
@@ -111,6 +116,18 @@ img {
   z-index: 1000;
   height: 100px;
   transition: all linear 0.4s;
+}
+
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
 }
 
 /* ==================================

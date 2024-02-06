@@ -37,7 +37,7 @@
 
     <!-- About section starts from here +++++++++++++++++++++++++++++++++++++++++++ -->
 
-    <div class="about">
+    <div class="about reveal">
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
@@ -82,7 +82,7 @@
 
     <!-- services section starts from here +++++++++++++++++++++++++++++++++++++++++++ -->
 
-    <div class="service">
+    <div class="service reveal">
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
@@ -214,7 +214,7 @@
 
     <!-- project section starts from here +++++++++++++++++++++++++++++++++++++++++++ -->
 
-    <div class="project">
+    <div class="project reveal">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 col-sm-12 p-0">
@@ -803,7 +803,7 @@
       </div>
     </div>
 
-    <div class="founder">
+    <div class="founder reveal">
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
@@ -967,6 +967,27 @@
           }
         }
       });
+
+      function reveal() {
+        var reveals = document.querySelectorAll(".reveal");
+
+        for (var i = 0; i < reveals.length; i++) {
+          var windowHeight = window.innerHeight;
+          var elementTop = reveals[i].getBoundingClientRect().top;
+          var elementVisible = 150;
+
+          if (elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add("active");
+          } else {
+            reveals[i].classList.remove("active");
+          }
+        }
+      }
+
+      window.addEventListener("scroll", reveal);
+
+      // To check the scroll position on the page load
+      reveal();
     </script>
 
     <script src="assets/js/jquery-1.12.4.min.js"></script>
