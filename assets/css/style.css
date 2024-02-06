@@ -170,10 +170,6 @@ img {
   z-index: 9999;
   transition: all linear 0.4s;
 }
-/* .banner .main .logo.scrolled {
-  width: 10%;
-  position: fixed;
-} */
 
 .banner .main h2 {
   color: white;
@@ -198,6 +194,7 @@ img {
   position: relative;
   padding-bottom: 100px;
 }
+
 .about h5::after {
   content: "";
   position: absolute;
