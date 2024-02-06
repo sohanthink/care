@@ -108,8 +108,7 @@ img {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1000; /* Ensure menu is above other content */
-  background-color: #ffffff00; /* Example background color */
+  z-index: 1000;
   height: 100px;
   transition: all linear 0.4s;
 }
@@ -142,9 +141,10 @@ img {
   transition: all linear 0.4s;
 }
 .banner .main .logo {
-  width: 15%;
+  width: 11%;
   position: absolute;
   top: 140px;
+  z-index: 1100;
 }
 
 .scrolled {

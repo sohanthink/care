@@ -29,7 +29,9 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="main">
-                            <div class="logo"><img src="assets/images/grey small.png"></div>
+                            <div class="logo"><img src="assets/images/logo.svg"></div>
+                            <!-- <div class="logo"><img src="assets/images/grey small.png"></div> -->
+                            <!-- <div class="logo"><img src="assets/images/logo-black.png"></div> -->
                             <div class="content">
                                 <h2>Strategic advisory for cultural development and design</h2>
                             </div>
@@ -445,19 +447,26 @@
         var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
         let element = document.querySelector(".logo")
         let topmenu = document.querySelector(".top-menu")
+        console.log(scrollTop);
         if(scrollTop>0){
-            element.style.top = "0"
+            element.style.top = "13px"
             element.style.position = "fixed"
-            element.style.width = "5%"
+            element.style.width = "3%"
             element.style.transition = "all linear 0.4s"
-            topmenu.style.background = "#ffffff63"
+            topmenu.style.background = "rgb(200 210 169)"
         }else{
             element.style.top = "140px"
             element.style.position = "absolute"
-            element.style.width = "15%"
+            element.style.width = "11%"
             element.style.transition = "all linear 0.4s"
             topmenu.style.background = "#ffffff00"
         }
+
+        // if (scrollTop>1000) {
+        //     element.style.background ="#c8d2a9"
+        // }else{
+        //     element.style.background ="none"
+        // }
         });
 
     </script>
