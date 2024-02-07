@@ -482,6 +482,10 @@ img {
     padding: 0px;
   }
 
+  .banner .main .logo {
+    width: 30%;
+  }
+
   .banner .main h2 {
     font-size: 17px;
   }
@@ -571,6 +575,9 @@ img {
   }
   .banner .main {
     padding: 0;
+  }
+  .banner .main .logo {
+    width: 30%;
   }
   .about {
     padding: 92px 0;
