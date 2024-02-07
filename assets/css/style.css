@@ -264,6 +264,12 @@ img {
   gap: 210px;
   margin-top: 70px;
 }
+.about .about_img .box1 {
+  width: 50%;
+}
+.about .about_img .box2 {
+  width: 50%;
+}
 .about .about_img img {
   width: 100%;
 }
@@ -496,6 +502,13 @@ img {
     margin-top: 100px;
     flex-direction: column;
   }
+  .about .about_img .box1 {
+    width: 100%;
+  }
+  .about .about_img .box2 {
+    width: 100%;
+  }
+
   .about p {
     font-size: 22px;
   }
@@ -585,30 +598,45 @@ img {
   .project {
     padding: 40px;
   }
+
+  .about .about_img .box1 {
+    width: 100%;
+  }
+  .about .about_img .box2 {
+    width: 100%;
+  }
+
   .project .project_content_section p a::after {
     top: 50px;
   }
+
   .project .project_content_section h6 {
     font-size: 12px;
   }
+
   .founder {
     padding: 40px;
   }
+
   .founder .founder_content p {
     margin-top: 30px;
   }
+
   .footer .main .logo img {
     width: 100%;
   }
+
   .about p {
     font-size: 25px;
   }
+
   .about .about_img {
     display: flex;
     gap: 30px;
     margin-top: 20px;
     flex-direction: column;
   }
+
   .service p {
     font-size: 25px;
   }
@@ -625,9 +653,11 @@ img {
   .project .project_content_section p a span {
     font-size: 17px;
   }
+
   .footer .main .middle p {
     font-size: 17px;
   }
+
   .footer .main .info ul li {
     font-size: 17px;
   }
