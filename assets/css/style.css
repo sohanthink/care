@@ -527,6 +527,7 @@ img {
   }
   .service .service_card {
     margin: 40px 0 0 0;
+    padding: 20px;
   }
 
   .service p {
@@ -534,7 +535,7 @@ img {
   }
 
   .service .service_card .title h3 {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .service .service_card .description p {
