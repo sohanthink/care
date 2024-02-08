@@ -318,6 +318,13 @@ img {
   margin: 60px 0 0 0;
   padding: 45px;
 }
+.service .service_card .img {
+  display: flex;
+  justify-content: center;
+}
+.service .service_card .img img {
+  width: 60%;
+}
 .service .service_card .title h3 {
   font-size: 32px;
   font-family: var(--primary-font);
